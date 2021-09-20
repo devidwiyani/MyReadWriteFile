@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_notebook"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY ASSIGNMENTS"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="30dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_below="@id/header_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEADLINE"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tanggal"
+        android:background="@drawable/button"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:focusable="false"
+        android:padding="@dimen/tiny_margin" />
+
+    <TextView
+        android:id="@+id/file"
+        android:layout_below="@id/edit_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASSIGNMENT"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/edit_file"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/file"
+        android:background="@drawable/button"
+        android:gravity="top|start"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:layout_marginBottom="40dp"
+        android:padding="@dimen/tiny_margin" />
+
+    <LinearLayout
+        android:id="@+id/header_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|start"
+        android:layout_below="@+id/edit_file"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_new"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/file_new"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button_open"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:layout_marginLeft="@dimen/tiny_margin"
+            android:layout_marginStart="@dimen/tiny_margin"
+            android:text="@string/file_open"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button_save"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:layout_marginLeft="@dimen/tiny_margin"
+            android:layout_marginStart="@dimen/tiny_margin"
+            android:text="@string/file_save"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

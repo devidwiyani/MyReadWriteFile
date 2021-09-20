@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyReadWriteFile</string>
+    <string name="file_new">NEW</string>
+    <string name="file_open">OPEN</string>
+    <string name="file_save">SAVE</string>
+    <string name="title">title</string>
+</resources>
